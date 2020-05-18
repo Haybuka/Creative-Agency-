@@ -1,0 +1,594 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Mada', sans-serif;
+	max-width: 100%;
+	padding: 40px;
+	margin: 10px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	z-index: 5;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-right: 25px;
+}
+
+nav ul li {
+	margin: 5px;
+	color: #726a6a;
+	padding: 5px;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+nav ul li.active {
+	color: rgb(47, 47, 158);
+}
+
+#banner {
+	position: relative;
+	width: 100%;
+	top: 70px;
+}
+
+#banner {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#banner .left ul {
+	padding: 0;
+}
+
+#banner .left ul li {
+	width: 10px;
+	height: 10px;
+	/* background-color: black; */
+	/* border-radius: 2px solid white; */
+	list-style-type: none;
+	padding: 3px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+/* styling the small color box */
+#banner .left ul li.aquablue {
+	background-color: aqua;
+}
+
+#banner .left ul li.red {
+	background-color: red;
+}
+
+#banner .left ul li.blue {
+	background-color: rgb(47, 47, 158);
+}
+
+#banner .left ul li.aquablue {
+	background-color: aqua;
+}
+
+/* styling the left banner */
+#banner .left {
+	width: 45%;
+	padding: 15px;
+}
+
+#banner .left .bannerleft h2 {
+	line-height: 25px;
+}
+
+#banner .left .bannerleft p {
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+#banner .left .bannerleft button {
+	background-color: blue;
+	color: white;
+	border-radius: 25px;
+	border: none;
+	padding: 10px 20px;
+	font-family: 'Mada';
+	font-weight: 700;
+	margin: 10px;
+}
+
+/* styling the right banner image */
+#banner .right {
+	width: 49.33%;
+}
+
+#banner .right img {
+	width: 100%;
+	padding: 20px 0px;
+}
+
+#wrapper {
+	box-sizing: border-box;
+}
+
+/* styling the aside logo */
+aside {
+	max-width: 100%;
+	width: 80%;
+	margin: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: nowrap;
+}
+
+aside img {
+	width: 65px;
+	opacity: 0.5;
+}
+
+div.services {
+	padding: 15px 0;
+}
+
+div.services h3:first-child {
+	color: rgb(37, 37, 170);
+}
+
+section {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-around;
+	/* margin-left: 37px; */
+}
+
+section article {
+	margin: 10px 0;
+	width: 170px;
+	height: 200px;
+	background-color: rgba(37, 36, 36, 0.4);
+	border-radius: 15px;
+	padding: 10px;
+	box-shadow: 6px 5px 0 0 rgba(43, 42, 42, 0.3);
+}
+
+section article:nth-child(2) {
+	background-color: rgba(150, 190, 241, 0.5);
+}
+
+section article h4 {
+	text-align: center;
+}
+
+section article i {
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 35px;
+}
+
+/* second banner */
+
+#banner2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+div .bannerLeft {
+	width: 50%;
+	padding: 10px;
+}
+
+div .bannerRight {
+	margin: 15px 0;
+	padding: 10px;
+	width: 45%;
+}
+
+.bannerLeft img {
+	width: 100%;
+	padding: 10px;
+}
+
+.bannerRight h3:first-child {
+	color: rgb(37, 37, 170);
+}
+
+/* testimony Section */
+
+.testimony h3.statement {
+	text-decoration: underline;
+	text-decoration-color: rgb(37, 37, 170);
+	text-decoration-style: solid;
+	text-decoration-thickness: 5px;
+	text-align: center;
+}
+
+.testimony #client {
+	width: 100%;
+}
+
+.testimony #client .clientGeneral {
+	padding: 2px;
+	margin: 5px;
+	display: flex;
+	flex: 1 1 30%;
+	justify-content: space-around;
+	position: relative;
+}
+
+.testimony #client .clientGeneral p.speech {
+	padding: 2px;
+	text-align: justify;
+}
+
+.testimony #client .clientGeneral li {
+	list-style-type: none;
+	margin: 1%;
+	justify-content: center;
+}
+
+.testimony #client .clientGeneral img {
+	width: 20%;
+	border-radius: 55px;
+}
+
+.testimony #client .clientGeneral img:nth-child(2) {
+	width: 30%;
+	border-radius: 55px;
+}
+
+.testimony #client .clientGeneral div.intro {
+	width: 55%;
+	padding: 5px;
+	margin: 5px;
+}
+
+.testimony #client .clientGeneral .details {
+	float: left;
+	margin: 2px;
+	padding-top: 5%;
+}
+
+.testimony #client .clientGeneral ul {
+	float: left;
+	margin: 0 3px;
+	padding-left: 0;
+}
+
+.testimony #client .clientGeneral ul {
+	list-style-type: none;
+}
+/* .testimony #client .clientGeneral div#first {
+	position: relative;
+	left: 120px;
+	top: -140px;
+}
+
+.testimony #client .clientGeneral div#third {
+	position: relative;
+	right: -120px;
+	top: -140px;
+}
+
+.testimony #client .clientGeneral div.intro p {
+	margin: 0;
+}
+
+.testimony #client .clientGeneral div.intro h4 {
+	margin: 0 auto;
+} */
+
+footer {
+	background-color: rgba(150, 190, 241, 0.3);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	width: 100%;
+}
+footer img {
+	padding: 10px 0;
+	margin: 5px;
+	display: block;
+}
+
+footer .footNav {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .footNav li {
+	list-style-type: none;
+}
+
+footer .footNav .left {
+	padding-top: 9px;
+}
+
+footer .footNav .right {
+	display: flex;
+	justify-content: space-around;
+	padding: 5px;
+}
+
+footer .footNav .right li {
+	list-style-type: none;
+	margin: 5px;
+}
+/* clear fixes to reset page*/
+#banner:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* pseudo */
+#banner .left .bannerleft button:hover {
+	color: blue;
+	background-color: white;
+	box-shadow: 3px 2px 0 0 rgba(43, 42, 42, 0.3);
+}
+
+section article:hover {
+	position: relative;
+	top: -10px;
+}
+
+/* responsive design */
+@media screen and (max-width: 1060px) {
+	/* .testimony #client .clientGeneral {
+		font-size: 10px;
+	}
+	.testimony h3.statement {
+		font-size: 15px;
+	} */
+
+	section {
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		/* margin-left: 37px; */
+	}
+	/* .testimony #client .clientGeneral div#first {
+		position: relative;
+		left: 90px;
+		top: -90px;
+	}
+
+	.testimony #client .clientGeneral div#third {
+		position: relative;
+		right: -90px;
+		top: -90px;
+	} */
+	div.services {
+		padding: 15px 0;
+		margin: 15px auto;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	div .bannerRight p {
+		display: none;
+	}
+	/* .testimony #client .clientGeneral div#first {
+		position: relative;
+		left: 70px;
+		top: -90px;
+	}
+
+	.testimony #client .clientGeneral div#third {
+		position: relative;
+		right: -70px;
+		top: -90px;
+	} */
+	div.services {
+		padding: 20px 0;
+		margin: 15px auto;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	#banner .left .bannerleft p {
+		display: none;
+	}
+	/* .testimony #client .clientGeneral div#first {
+		position: relative;
+		left: 60px;
+		top: -70px;
+	}
+
+	.testimony #client .clientGeneral div#third {
+		position: relative;
+		right: -60px;
+		top: -70px;
+	} */
+	div.services {
+		padding: 15px 0;
+		margin: 10px auto;
+	}
+	div.services p {
+		display: none;
+	}
+	nav ul {
+		margin-right: 15px;
+	}
+
+	nav ul li {
+		margin: 2px;
+
+		padding: 3px;
+	}
+	#banner2 {
+		width: 100%;
+		display: block;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+
+	div .bannerLeft {
+		width: 100%;
+		padding: 10px;
+	}
+
+	div .bannerRight {
+		margin: 5px 0;
+		padding: 5px;
+		width: 100%;
+	}
+
+	.bannerLeft img {
+		width: 100%;
+		padding: 5px;
+	}
+
+	#banner {
+		margin-bottom: 40px;
+		padding: 5px;
+		flex-wrap: wrap-reverse;
+	}
+
+	#banner .right {
+		width: 100%;
+		padding: 10px;
+	}
+
+	#banner .left {
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+	}
+
+	#banner .left .bannerleft button {
+		margin: 2px 0;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	/* .testimony #client .clientGeneral div#first {
+		position: relative;
+		left: 40px;
+		top: -60px;
+	}
+
+	.testimony #client .clientGeneral div#third {
+		position: relative;
+		right: -40px;
+		top: -60px;
+	} */
+	div.services {
+		padding: 10px 0;
+		margin: 5px auto;
+	}
+
+	section article {
+		margin: 10px 0;
+		width: 100px;
+		height: 130px;
+		padding: 10px;
+	}
+
+	section {
+		width: 80%;
+	}
+
+	section article small {
+		display: none;
+	}
+	section article h4 {
+		text-align: center;
+	}
+
+	#banner .left .bannerleft button {
+		background-color: blue;
+		color: white;
+		border-radius: 25px;
+		border: none;
+		padding: 5px 10px;
+		font-family: 'Mada';
+		font-weight: 500;
+		margin: 5px 0;
+	}
+
+	/* styling the right banner image */
+	#banner .right {
+		width: 100%;
+	}
+
+	#banner .right img {
+		width: 100%;
+		padding: 15px 0px;
+	}
+	nav {
+		position: static;
+		display: block;
+		justify-content: space-between;
+		/* background-color: red; */
+	}
+
+	nav ul.collapse {
+		position: sticky;
+		top: 75px;
+		display: iflex;
+		/* background-color: blue; */
+	}
+
+	body {
+		padding: 5px;
+		margin: 2px;
+	}
+
+	footer {
+		border-bottom-right-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	footer img {
+		padding: 5px 3px;
+		margin: 1px;
+		display: block;
+	}
+
+	footer .footNav {
+		justify-content: space-around;
+		font-size: smaller;
+	}
+
+	footer .footNav .left {
+		padding-top: 6px;
+	}
+
+	footer .footNav .right {
+		display: flex;
+		justify-content: space-around;
+		padding: 2px;
+	}
+
+	footer .footNav .right li {
+		margin: 3px;
+	}
+
+	footer .footNav .left li {
+		padding-top: 6px;
+		margin: 3px;
+	}
+	.testimony #client .clientGeneral {
+		display: block;
+		margin: 1% 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.testimony #client .clientGeneral li.resizeMobile {
+		margin: 0 auto;
+		width: 70%;
+	}
+}
